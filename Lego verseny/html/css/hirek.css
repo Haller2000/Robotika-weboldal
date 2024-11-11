@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../../Képek/foto3.jpg') center center/cover;
+    
+    
+}
+
+#szovegek{
+    font-size: larger;
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.7)
+    ;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar-right li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.content-container {
+    margin-top: 80px;
+    display: block;
+    padding: 20px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.content-left, .content-right {
+    width: 48%;
+}
+
+.content-left img, .content-right img {
+    width: 100%;
+    height: 650px;
+    border-radius: 8px;
+
+}
+
+#idezojel{
+    font-style: italic;
+}
+
+#lista{
+    font-size: larger;
+}
+
+#szovegek{
+    text-align: justify;
+    color: black;
+}
+
+.content-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.alternate {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .content-item {
+        flex-direction: column;
+    }
+
+    .content-left, .content-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .alternate {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+}
+
+#divenbeluli{
+    text-align: justify;
+    width: 50; 
+    height: auto; 
+    position: relative; 
+    top: 0;
+    line-break: inherit;
+}
