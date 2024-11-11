@@ -29,19 +29,22 @@ body {
 .category-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1500px;
     flex-wrap: wrap;  
+
 }
 
 .category {
     text-align: center;
-    width: 22%;
+    width: 18%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     transition: transform 0.2s ease;
     margin-bottom: 20px;   
+    flex-wrap: 1;
+    
 }
 
 .category img {
